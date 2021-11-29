@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.boll {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: 2s ease infinite;
+    animation-name: loading;
+    box-shadow: 4px 2px 4px 0px rgb(142 141 141);
+}
+
+.blue{
+    background: #4285F4;
+}
+
+.red{
+    background: #EA4335;
+    animation-delay: .25s;
+}
+
+.yellow{
+    background: #FBBC05;
+    animation-delay: .50s;
+}
+
+.green{
+    background: #34A853;
+    animation-delay: .75s;
+}
+
+
+@keyframes loading {
+    50%{
+        transform: translateY(25px);
+    }
+}
